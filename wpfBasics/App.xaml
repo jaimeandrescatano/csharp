@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:wpfBasics"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <DataTemplate x:Key="myListBoxTemplate">
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding}" FontStyle="Italic"></TextBlock>
+            </StackPanel>
+            
+        </DataTemplate>
     </Application.Resources>
 </Application>

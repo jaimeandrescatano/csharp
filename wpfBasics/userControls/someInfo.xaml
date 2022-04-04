@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="wpfBasics.userControls.someInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:wpfBasics.userControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="281.358" d:DesignWidth="800">
+    <StackPanel>
+        <Grid Background="#FFE5E5E5">
+            <TextBlock HorizontalAlignment="Center" Margin="0,89,0,0" TextWrapping="Wrap" Text="Windows Presentation Foundation (WPF) in Visual Studio 2015 provides developers with a unified programming model for building rich, modern desktop applications on Windows. In this course, expert developer Walt Ritscher steps you through the details of how to create dramatic Windows user experiences using WPF and XAML. Learn the fundamentals of the framework while you follow along with Walt, building a sample app that showcases all of its most interesting features. Learn to lay out the user interface, add images and custom user controls, work with data binding and data templates, and style content. Plus, get a look at the attention-grabbing 3D and UI effects you can add with Windows Presentation Foundation." VerticalAlignment="Top" Height="143" Width="774"/>
+            <Image HorizontalAlignment="Left" Height="194" Margin="247,10,0,0" VerticalAlignment="Top" Width="273" Source="/images/landscape.png"/>
+        </Grid>
+    </StackPanel>
+</UserControl>

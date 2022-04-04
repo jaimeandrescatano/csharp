@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\myGitHub\csharp\wpfBasics\App.xaml
-11407045341
+2-1990454809
 
-51842997122
+6-39613015
 1941645785384
-MainWindow.xaml;
+MainWindow.xaml;userControls\someInfo.xaml;
 
-False
+True
 

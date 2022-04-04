@@ -23,6 +23,12 @@ namespace wpfBasics
         public MainWindow()
         {
             InitializeComponent();
+
+            List<string> mylist1 = new List<string>(new string[] { "element1", "element2", "element3" });
+            List<string> mylist2 = new List<string>(new string[] { "perro", "gato", "pollo" });
+
+            myListBox1.ItemsSource = mylist1;
+            myListBox2.ItemsSource = mylist2;
         }
     }
 }

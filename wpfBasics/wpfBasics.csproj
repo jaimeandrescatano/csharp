@@ -7,4 +7,20 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="images\homeIcon.png" />
+    <None Remove="images\landscape.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\homeIcon.png" />
+    <Resource Include="images\landscape.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="userControls\someInfo.xaml">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Page>
+  </ItemGroup>
+
 </Project>

@@ -4,9 +4,70 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wpfBasics"
+        xmlns:views="clr-namespace:wpfBasics.userControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="WPF Basics" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        >
+    <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <TextBlock x:Name="myTextBlock1" Text="  Simple WPF Program" FontSize="24" FontWeight="Bold"></TextBlock>
+        <TabControl x:Name="myTabControl1" MinHeight="300">
+            <TabItem Header="tab1">
+                <StackPanel>
+                    <Grid Height="250"
+                          Margin="0,6,0,0">
 
-    </Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30*"></RowDefinition>
+                            <RowDefinition Height="60*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20*"></ColumnDefinition>
+                            <ColumnDefinition Width="80*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Image 
+                            Grid.Row="0" 
+                            Grid.Column="0"
+                            Stretch="Fill"                            
+                            Source="/images/homeIcon.png"></Image>
+                        <Image 
+                            Grid.Row="0" 
+                            Grid.Column="1"                            
+                            Stretch="Fill"                            
+                            Source="/images/landscape.png"></Image>
+
+
+                    </Grid>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="tab2">
+                <views:someInfo Height="329"></views:someInfo>
+            </TabItem>
+            <TabItem Header="tab3">
+                <StackPanel>
+                    <ListBox x:Name="myListBox1">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding}"></TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+
+                    <!-- 
+                        Using a template to define the ListBox 
+                    -->
+
+                    <ListBox x:Name="myListBox2" ItemTemplate="{StaticResource myListBoxTemplate}"></ListBox>
+
+                </StackPanel>
+            </TabItem>
+
+        </TabControl>
+    </StackPanel>
 </Window>
+
+
+    
